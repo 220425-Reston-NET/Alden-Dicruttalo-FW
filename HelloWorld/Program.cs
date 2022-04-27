@@ -22,7 +22,29 @@ Console.WriteLine(carObj2.Owner);
 carObj2.Fuel = -100;
 Console.WriteLine(carObj2.Fuel);
 
-Menu groceryMenu = new Menu();
+// Menu groceryMenu = new Menu();
+// groceryMenu.Shop();
 
-groceryMenu.shop();
+
+//Menu Demo
+Menu2 menuObj = new Menu2();
+bool repeat = true;
+Console.WriteLine("Hello! What is your name?");
+menuObj.Name = Console.ReadLine();
+while(repeat)
+{
+    menuObj.GreetUser();
+    string answer = Console.ReadLine();
+    if(answer == "1")
+    {
+        menuObj.BuyItem();
+    }
+    else if(answer == "2")
+    {
+        Console.WriteLine("Your total is: $" + menuObj.Total);
+        Console.WriteLine("Thank you for shopping with us! :)");
+        repeat = false;
+    }
+}
+
 

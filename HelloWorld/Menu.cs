@@ -1,7 +1,7 @@
 
 public class Menu
 {
-    public void shop()
+    public void Shop()
     {
         bool repeat = true;
         int total = 0;
