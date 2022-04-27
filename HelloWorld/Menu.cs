@@ -5,6 +5,7 @@ public class Menu
     {
         bool repeat = true;
         int total = 0;
+        string selection = "";
         Console.Clear();
         Console.WriteLine("Welcome to our Store!");
         while(repeat)
@@ -18,47 +19,47 @@ public class Menu
         Console.WriteLine("5 Juice");
         Console.WriteLine("Press 6 to Checkout");
         Console.WriteLine("");
-        string answer = Console.ReadLine();
-            if(answer == "0")
+        selection = Console.ReadLine();
+            if(selection == "0")
             {
                 repeat = false;
             }
-            if(answer == "1")
+            if(selection == "1")
             {
                 Console.WriteLine("Beef is $3");
                 total += 3;
                 Console.WriteLine("Your current total is: $"+ total);
                 Console.WriteLine("");
             }
-            if(answer == "2")
+            if(selection == "2")
             {
                 Console.WriteLine("Chicken is $4");
                 total += 4;
                 Console.WriteLine("Your current total is: $"+ total);
                 Console.WriteLine("");
             }
-            if(answer == "3")
+            if(selection == "3")
             {
                 Console.WriteLine("Milk is $5");
                 total += 5;
                 Console.WriteLine("Your current total is: $"+ total);
                 Console.WriteLine("");
             }
-            if(answer == "4")
+            if(selection == "4")
             {
                 Console.WriteLine("Eggs are $6");
                 total += 6;
                 Console.WriteLine("Your current total is: $"+ total);
                 Console.WriteLine("");
             }
-            if(answer == "5")
+            if(selection == "5")
             {
                 Console.WriteLine("Juice is $7");
                 total += 7;
                 Console.WriteLine("Your current total is: $"+ total);
                 Console.WriteLine("");
             }
-            if(answer == "6")
+            if(selection == "6")
             {
                 Console.WriteLine("Thank you for Shopping.");
                 Console.WriteLine("Your total is: $"+ total);
